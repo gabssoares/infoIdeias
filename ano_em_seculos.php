@@ -22,7 +22,7 @@
             if($ano < 100) {
                 $this->$seculo = 1;
             }else if($ano % 100 === 0) {
-                $this->$seculo = $ano / 100;
+                $this->$seculo = round($ano / 100);
             }else{
                 $this->$seculo = round(($ano / 100) + 1); 
             }
